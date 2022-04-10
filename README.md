@@ -4,6 +4,7 @@
 ![stars](https://img.shields.io/github/stars/Steinerd/Loupedeck.AudioSwitcherPlugin?style=flat)
 ![issues](https://img.shields.io/github/issues/Steinerd/Loupedeck.AudioSwitcherPlugin?style=flat)
 [![downloads](https://img.shields.io/github/downloads/Steinerd/Loupedeck.AudioSwitcherPlugin/latest/total?style=plastic)](https://github.com/Steinerd/Loupedeck.AudioSwitcherPlugin/compare)
+
 In short, this is a dynamically generated _folder_ accessible via "Audio Devices" button. 
 
 ## Credits
