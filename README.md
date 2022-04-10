@@ -25,7 +25,7 @@ This plugin makes use of [Sean Chapman's/xenolightning](https://github.com/xenol
 <details><summary><b>Loupedeck Installation</b></summary>
   
   
-  1. Go to [latest release](releases/latest), and download the `lplug4` file to you computer
+  1. Go to [latest release](https://github.com/Steinerd/Loupedeck.AudioSwitcherPlugin/releases/latest), and download the `lplug4` file to you computer
   1. Open (normally double-click) to install, the Loupedeck software should take care of the rest
   1. Restart Loupedeck (if not handled by the installer)
   1. In the Loupedeck interface, enable **AudioSwitcher** by clicking <ins>Manage plugins</ins>
