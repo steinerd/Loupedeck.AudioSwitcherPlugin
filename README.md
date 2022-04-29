@@ -7,6 +7,8 @@
 
 In short, this is a dynamically generated _folder_ accessible via "Audio Devices" button. 
 
+As of (4/28/2022), an additional experiemental PTT (mic mute press-to-talk) button functionality was added. 
+
 ## Credits
 
 This plugin makes use of [Sean Chapman's/xenolightning](https://github.com/xenolightning) [AudioSwitcher](https://github.com/xenolightning/AudioSwitcher) project/NuGet Package. 
