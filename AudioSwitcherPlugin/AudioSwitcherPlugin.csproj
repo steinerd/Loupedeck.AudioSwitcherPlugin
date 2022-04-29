@@ -72,6 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AudioSwitchApplication.cs" />
     <Compile Include="AudioSwitcherPlugin.cs" />
+    <Compile Include="PressToTalkCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="PluginConfiguration.json" />

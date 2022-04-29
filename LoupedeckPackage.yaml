@@ -11,4 +11,8 @@ supportedDevices:
 
 pluginFileName: AudioSwitcherPlugin.dll
 pluginFolderWin: ./bin/win/
-pluginFolderMac: ./bin/mac/
+
+license: MIT
+licenseUrl: https://opensource.org/licenses/MIT
+homePageUrl: https://github.com/Steinerd/Loupedeck.AudioSwitcherPlugin
+supportPageUrl: https://github.com/Steinerd/Loupedeck.AudioSwitcherPlugin/issues

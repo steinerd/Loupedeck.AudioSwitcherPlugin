@@ -37,12 +37,9 @@
                 PluginDynamicFolder.NavigateUpActionName,
             };
 
-            if (AudioSwitcherPlugin.Instance.ActiveDevices.Count > 0)
-            {
-                return systemButtons.Concat(AudioSwitcherPlugin.Instance.ActiveDevices.Select(s => this.CreateCommandName(s.Name)));
-            }
-
-            return systemButtons.Concat(new[] { this.CreateCommandName("Please\nWait...") });
+            return AudioSwitcherPlugin.Instance.ActiveDevices.Count > 0
+                ? systemButtons.Concat(AudioSwitcherPlugin.Instance.ActiveDevices.Select(s => this.CreateCommandName(s.Name)))
+                : systemButtons.Concat(new[] { this.CreateCommandName("Please\nWait...") });
         }
 
 

@@ -6,3 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0011:Add braces", Justification = "Because it's a stupid rule...", Scope = "module")]
+[assembly: SuppressMessage("Style", "IDE0049:Use framework type", Justification = "Because it's a stupid rule...", Scope = "module")]
