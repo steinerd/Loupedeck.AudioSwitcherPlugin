@@ -21,26 +21,27 @@ namespace Loupedeck.AudioSwitcherPlugin
             if (Instance == null)
                 Instance = this;
 
-            if (this.AudioController == null)
-            {
-                // Without this delay the Audio Knob (if used) stops working....
-                Task.Factory.StartNew(async () =>
-                {
-                    await Task.Delay(TimeSpan.FromSeconds(10));
-                    this.AudioController = new CoreAudioController();
-                    this.RefreshDevices();
-                });
-            }
-
             if (this.ActiveDevices == null)
             {
                 this.ActiveDevices = new ConcurrentStack<CoreAudioDevice>();
             }
+
+            if (this.AudioController == null)
+            {                
+                // Without this delay the Audio Knob (if used) stops working....
+                Task.Factory.StartNew(async () =>
+                {
+                    await Task.Delay(TimeSpan.FromSeconds(15));
+                    this.AudioController = new CoreAudioController();
+                    this.RefreshDevices();
+                });
+            }
+            
         }
 
         public override void Load() => this.LoadPluginIcons();
 
-        public override void Unload() => this.AudioController.Dispose();
+        public override void Unload() { }
 
         private void OnApplicationStarted(Object sender, EventArgs e) { }
 

@@ -26,18 +26,14 @@
 
         public CoreAudioDevice DefaultCommunicationDevice =>
             AudioSwitcherPlugin.Instance.AudioController.GetDefaultDevice(AudioSwitcher.AudioApi.DeviceType.Capture, AudioSwitcher.AudioApi.Role.Communications);
-        public PressToTalkCommand() : base("PTT", "Hold to PTT", "Audio") { }
+        public PressToTalkCommand() : base("PTT", "Hold to PTT", "Controls") { }
 
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChange(String propertyName)
         {
             if (propertyName == nameof(this.PTTState))
-            {
-                if (this.PTTState)
-                    this.DefaultCommunicationDevice.Mute(false);
-
-                if (!this.PTTState)
-                    this.DefaultCommunicationDevice.Mute(true);
+            {                
+                this.DefaultCommunicationDevice.Mute(!this.PTTState);                
             }
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -80,8 +76,6 @@
 
             return true;
         }
-
-
 
         protected override BitmapImage GetCommandImage(String actionParameter, PluginImageSize imageSize)
         {
